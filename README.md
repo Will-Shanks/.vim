@@ -1,6 +1,6 @@
 ## Setup
 must install python things
-- ```pip3 install {flake8, pylint, autopep8, yapf, isort}```
+- ```pip3 install flake8 pylint autopep8 yapf isort --user```
 - pylint config
 ```
 cat ~/.pylintrc
