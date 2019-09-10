@@ -1,7 +1,7 @@
 :set tabstop=2 shiftwidth=2 noexpandtab
 
 let b:ale_linters = {
-    \ 'go': ['gofmt', 'go vet', 'golint']
+    \ 'go': ['gofmt', 'golint']
 	\}
 
 let b:ale_fixers = {
