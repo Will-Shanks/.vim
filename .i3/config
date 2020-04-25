@@ -80,10 +80,16 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 # focus_follows_mouse no
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# i3 windows, tmux panes, and VIM windows.
+#bindsym Ctrl+h exec --no-startup-id ~/.i3/i3-focus.py left
+#bindsym Ctrl+j exec --no-startup-id ~/.i3/i3-focus.py down
+#bindsym Ctrl+k exec --no-startup-id ~/.i3/i3-focus.py up
+#bindsym Ctrl+l exec --no-startup-id ~/.i3/i3-focus.py right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -109,7 +115,7 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+h split h;exec notify-send 'tile horizontally'
+bindsym Super+h split h;exec notify-send 'tile horizontally'
 bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
