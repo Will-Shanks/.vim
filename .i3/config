@@ -85,11 +85,12 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# i3 windows, tmux panes, and VIM windows.
-#bindsym Ctrl+h exec --no-startup-id ~/.i3/i3-focus.py left
-#bindsym Ctrl+j exec --no-startup-id ~/.i3/i3-focus.py down
-#bindsym Ctrl+k exec --no-startup-id ~/.i3/i3-focus.py up
-#bindsym Ctrl+l exec --no-startup-id ~/.i3/i3-focus.py right
+# change focus
+set $focus exec --no-startup-id ~/.i3/i3-focus.py
+bindsym Ctrl+h $focus left
+bindsym Ctrl+j $focus down
+bindsym Ctrl+k $focus up
+bindsym Ctrl+l $focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left

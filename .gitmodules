@@ -7,3 +7,6 @@
 [submodule "pack/git-plugins/start/ale"]
 	path = pack/git-plugins/start/ale
 	url = https://github.com/w0rp/ale.git
+[submodule "pack/git-plugin/start/vim-tmux-navigator"]
+	path = pack/git-plugin/start/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
