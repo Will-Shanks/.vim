@@ -13,3 +13,5 @@ cat ~/.config/flake8
 [flake8]
 ignore = E741
 ```
+
+need i3-py for i3, tmux, vim nav to work
