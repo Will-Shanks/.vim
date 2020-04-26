@@ -85,13 +85,6 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# change focus
-set $focus exec --no-startup-id ~/.i3/i3-focus.py
-bindsym Ctrl+h $focus left
-bindsym Ctrl+j $focus down
-bindsym Ctrl+k $focus up
-bindsym Ctrl+l $focus right
-
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
