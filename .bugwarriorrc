@@ -1,0 +1,34 @@
+[general]
+targets = work_github
+annotation_comments = False
+
+[my_github]
+service = github
+github.login = Will-Shanks
+github.username = Will-Shanks
+github.add_tags = bugwarrior
+github.password = @oracle:ask_password
+github.exclude_repos = LeedsCapstone
+github.import_labels_as_tags = True
+github.label_template = github_{{label}}
+
+[work_github]
+service = github
+github.login = Will-Shanks
+github.username = NCAR
+github.password = @oracle:ask_password
+
+github.include_user_repos = False
+github.include_repos = HPCFL_TerraformScripts
+
+github.only_if_assigned = Will-Shanks
+github.also_unassigned = True
+
+github.query = repo:NCAR/HPCFL_TerraformScripts no:assignee is:open
+
+github.project_template = work
+github.default_priority = 
+github.import_labels_as_tags = True
+github.label_template = bw_{{label}}
+github.add_tags = bw, bw_{{githubrepo[5:]}},{{bw_githubmilestone if githubmilestone != 'None' else ''}}
+github.description_template = #{{githubnumber}} {{githubtitle}}

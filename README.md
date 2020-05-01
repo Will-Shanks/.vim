@@ -15,3 +15,12 @@ ignore = E741
 ```
 
 need i3-py for i3, tmux, vim nav to work
+
+
+## {task, time, bug}warrior setup
+- install them
+	- ```pacman -S task timew; pip install bugwarrior --user```
+- copy hook so taskwarrior times tasks via timewarrior
+	- ```cp /usr/share/doc/timew/ext/on-modify.timewarrior ~/.task/hooks/```
+- move config files
+	- ```cp {bugwarrior,task}rc ~/```

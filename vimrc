@@ -14,3 +14,7 @@ nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 "enable code folding
 set foldmethod=indent
 set foldlevel=99
+
+"vimwiki mardown syntax
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]

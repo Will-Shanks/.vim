@@ -7,3 +7,6 @@
 [submodule "pack/git-plugins/start/ale"]
 	path = pack/git-plugins/start/ale
 	url = https://github.com/w0rp/ale.git
+[submodule "pack/git-plugins/start/vimwiki"]
+	path = pack/git-plugins/start/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
